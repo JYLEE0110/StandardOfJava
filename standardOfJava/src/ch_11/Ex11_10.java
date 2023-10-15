@@ -14,9 +14,8 @@ public class Ex11_10 {
 
 		for(int i = 0; set.size() < 6; i++) {
 			
-			int num = (int)(Math.random()*45) + 1;
+			int num = (int)(Math.random()*10) + 1;
 			set.add(new Integer(num));
-			
 		}
 		
 		// set은 순서가 없기 때문에 list로 변환 후 정렬
