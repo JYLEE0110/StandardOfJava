@@ -40,9 +40,9 @@ class Student implements Comparable{
 		
 		if(o instanceof Student) {
 			
-			Student name = (Student)o;
+			Student tmp = (Student)o;
 			
-			return this.name.compareTo(name.name);
+			return this.name.compareTo(tmp.name);
 
 		}else {
 			return -1;
@@ -65,6 +65,7 @@ public class Exercise11_3 {
 		list.add(new Student("이자바", 1, 1, 100, 100, 100));
 		list.add(new Student("안자바", 1, 1, 100, 100, 100));
 		
+		// list에 저장된 객체의 기본 인터페이스인 comparable compareTo의 정렬을 따른다.
 		Collections.sort(list);
 		
 		Iterator it = list.iterator();
