@@ -54,9 +54,6 @@ class BanNoAscending implements Comparator{
 		}
 		
 	}
-	
-	
-	
 }
 
 public class Exercise11_4 {
